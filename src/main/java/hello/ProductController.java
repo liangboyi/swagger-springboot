@@ -9,7 +9,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Arrays;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by bliang on 10/08/2017.
@@ -72,6 +74,18 @@ public class ProductController {
         System.out.println("-----------delete one product -----------");
         return new ResponseEntity("Product deleted successfully", HttpStatus.OK);
 
+    }
+
+    @RequestMapping(value = "/listMap", method= RequestMethod.GET, produces = "application/json")
+    public Map listMap(){
+        List<Product> prodList =initProduct();
+        Map mp = new HashMap();
+        mp.put("key1","value1");
+        mp.put("key2","value2");
+        mp.put("key3","value3");
+        mp.put("key4",prodList.get(0));
+        mp.put("key5",prodList);
+        return mp;
     }
 
     public List<Product> initProduct(){
