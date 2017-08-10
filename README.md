@@ -149,5 +149,6 @@ public class ProductController {
 ## show swagger information
 http://localhost:8080/swagger-ui.html
 ![](http://or5qh6y3k.bkt.clouddn.com/20170810172524_AuuFhE_Screenshot.jpeg)
+
 http://localhost:8080/v2/api-docs?group=products
 ![](http://or5qh6y3k.bkt.clouddn.com/20170810172856_v3vLCV_Screenshot.jpeg)
