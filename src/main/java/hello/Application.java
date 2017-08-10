@@ -36,7 +36,7 @@ public class Application {
         return new ApiInfoBuilder()
                 .title("Spring REST Sample with Swagger")
                 .description("Spring REST Sample with Swagger")
-                .termsOfServiceUrl("https://github.com/liangboyi/gs-rest-service")
+                .termsOfServiceUrl("https://github.com/liangboyi/swagger-springboot")
                 .contact("Boyi Liang")
                 .license("Apache License Version 2.0")
                 .licenseUrl("https://www.apache.org/licenses/LICENSE-2.0")
