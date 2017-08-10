@@ -5,19 +5,29 @@ import io.swagger.annotations.ApiModelProperty;
 
 public class Product {
 
+    //add for swagger
     @ApiModelProperty(notes = "The database generated product ID")
+    //end
     private Long id;
 
+    //add for swagger
     @ApiModelProperty(notes = "The application-specific product Name")
+    //end
     private String name;
 
+    //add for swagger
     @ApiModelProperty(notes = "The application-specific product ID")
+    //end
     private String productId;
 
+    //add for swagger
     @ApiModelProperty(notes = "The product description")
+    //end
     private String description;
 
+    //add for swagger
     @ApiModelProperty(notes = "The price of the product", required = true)
+    //end
     private Double unitPrice;
 
     public Product() {
